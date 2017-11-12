@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Organism
+{
+    // Attributes
+    public double Health { get; set; }
+    public int Strength { get; set; }
+    public int Endurance { get; set; }
+    public int Recovery { get; set; }
+    public int Age { get; set; }
+
+    public void Tick(int mstime)
+    {
+        // Adjust Attributes based on time inputted
+    }
+
+    public bool ShouldIDie()
+    {
+        // Has the organism died based on its current state
+        if (Health > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
